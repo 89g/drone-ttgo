@@ -5,13 +5,14 @@ that each drone broadcasts its position and home position via an 802.11 beacon
 frame using a custom extension. This clearly makes most existing drones illegal.
 
 There are several beacons for sale that broadcast the required information. However,
-I discovered an open source project that used a [Liligo TTGO T-Beam board][1] that
-contains an ESP32 with Wifi and a GPS chip.(it also contains a LORA chip.)
+I discovered an [open source project](https://www.helicomicro.com/2020/05/26/une-solution-open-source-pour-le-signalement-electronique-a-distance-a-moins-de-40-e/) that used a [Liligo TTGO T-Beam board][1] that
+contains an ESP32 with Wifi and a GPS chip.(it also contains a LORA chip.) This project was
+written by [Pierre Kancir](https://www.malt.fr/profile/pierrekancir).
 
-The code was, however, not well structured and it was not easy to see what was
+The code was, however, not  structured in the way I like it and it was not easy to see what was
 going on. It also took some time to get started because it used platform.io and
 Arduino. I threfore rewrote the project and threw away a lot of unnecesary code.
-It now also only uses Arduino.
+It now also only uses Arduino, there are no other dependencies.
 
 ## Arduino
 
