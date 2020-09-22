@@ -1,8 +1,13 @@
-/*****************************************
-* ESP32 GPS VKEL 9600 Bds
-******************************************/
-
-char* DRONE_MANUFACTURER_ID = "AQUTEG000000000000000000000000";
+/**
+ * The first 3 characters require permission from the french
+ * government. aQute SARL has requested AQU (in progress). 
+ * 
+ * aQute SARL also has code 1642 for the ANSI code.
+ * 
+ * This is a template, the Wifi MAC code is used as serial number
+ * and inserted at the end in runtime as hex.
+ */
+const char* DRONE_MANUFACTURER_ID = "AQUTEG000000000000000000000000";
 
 
 #define T_BEAM_V10      //same v1.1 version
